@@ -1,0 +1,119 @@
+# example functions
+###################
+# def subroutine():
+#     while True:
+#         pass
+
+
+# def unary(param):
+#     raise NotImplementedError
+
+
+# def binary(param1, param2):
+#     raise NotImplementedError
+
+
+
+
+# warm-up challenge
+###################
+# create 4 binary functions
+# - add, sub, mul, div
+# that accept two parameters
+# and return the
+# - sum, difference, product, quotient
+
+
+
+
+# func-fu-00
+############
+# write an unary function 'identityf'
+# that takes an argument, and returns
+# a function that returns that argument
+# Example
+#########
+# three = identityf(3)
+# three()  # 3
+
+
+
+
+# func-fu-01
+############
+# write an unary function 'addf'
+# that combines from two invocations
+# Example
+#########
+# addf(3)(4)  # 7
+
+
+
+
+# func-fu-02
+############
+# Write a function 'flip'
+# that takes a binary functions
+# and reverses the parameters
+# Example
+#########
+# sub(3, 2)  # 1
+# flip(sub)(3, 2)  # -1
+
+
+
+
+# func-fu-03
+# Write a function 'liftf'
+# that takes aa binary function
+# and makes it callable from two invocations
+# Example
+#########
+# liftf(add)(3)(4)  # 7
+# liftf(mul)(3)(4)  # 12
+
+
+
+
+# func-fu-04
+############
+# Write a function 'partial' and 'quarter'
+# that takes a binary function and single
+# parameter, respectively and
+# makes it callable in as
+# many instances as needed
+# Example
+#########
+# quarter = partial(div, 4)
+# quarter(1)  # 0.25
+
+
+
+
+# class-fu-00
+# Implement a class 'Coordinates' method to
+# squares the y values for even x values
+# Example
+#########
+# coords = Coordinates()
+# for val in range(10):
+#     coords.add_coordinate(val, val)
+# coords.square_even()
+""" [(0, 0), (1, 1), (2, 4), (3, 3), (4, 16),
+        (5, 5), (6, 36), (7, 7), (8, 64), (9, 9)] """
+
+
+
+
+
+# request-fu-00
+# Implement a function `get_cve_score` that requests
+# the cve details from the endpoint specified in the following pdf
+# https://csrc.nist.gov/CSRC/media/Projects/National-Vulnerability-Database/documents/web%20service%20documentation/Automation%20Support%20for%20CVE%20Retrieval.pdf
+# Examples
+##########
+# get_cve_score('CVE-2015-5611')
+# {'base_score': 8.3}
+#
+# get_cve_score('CVE-2020-0506')
+# {'base_score': 2.1}
