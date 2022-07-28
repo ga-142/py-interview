@@ -5,19 +5,11 @@
 #         pass
 
 
-# def unary(param):
-#     raise NotImplementedError
-
-
-# def binary(param1, param2):
-#     raise NotImplementedError
-
-
 
 
 # warm-up challenge
 ###################
-# create 4 binary functions
+# create 4 functions
 # - add, sub, mul, div
 # that accept two parameters
 # and return the
@@ -28,7 +20,7 @@
 
 # func-fu-00
 ############
-# write an unary function 'identityf'
+# write a function 'identityf'
 # that takes an argument, and returns
 # a function that returns that argument
 # Example
@@ -41,7 +33,7 @@
 
 # func-fu-01
 ############
-# write an unary function 'addf'
+# write a function 'addf'
 # that combines from two invocations
 # Example
 #########
@@ -53,7 +45,7 @@
 # func-fu-02
 ############
 # Write a function 'flip'
-# that takes a binary functions
+# that takes a functions
 # and reverses the parameters
 # Example
 #########
@@ -65,7 +57,7 @@
 
 # func-fu-03
 # Write a function 'liftf'
-# that takes aa binary function
+# that takes a function
 # and makes it callable from two invocations
 # Example
 #########
@@ -78,7 +70,7 @@
 # func-fu-04
 ############
 # Write a function 'partial' and 'quarter'
-# that takes a binary function and single
+# that takes a function and single
 # parameter, respectively and
 # makes it callable in as
 # many instances as needed
@@ -102,18 +94,3 @@
 """ [(0, 0), (1, 1), (2, 4), (3, 3), (4, 16),
         (5, 5), (6, 36), (7, 7), (8, 64), (9, 9)] """
 
-
-
-
-
-# request-fu-00
-# Implement a function `get_cve_score` that requests
-# the cve details from the endpoint specified in the following pdf
-# https://csrc.nist.gov/CSRC/media/Projects/National-Vulnerability-Database/documents/web%20service%20documentation/Automation%20Support%20for%20CVE%20Retrieval.pdf
-# Examples
-##########
-# get_cve_score('CVE-2015-5611')
-# {'base_score': 8.3}
-#
-# get_cve_score('CVE-2020-0506')
-# {'base_score': 2.1}
