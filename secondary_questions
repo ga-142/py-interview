@@ -1,0 +1,103 @@
+CyRisk Secondary Technical Interview
+
+
+
+
+Section 1: Docker
+
+
+What command is used for running images as a container?
+
+ docker ps -a
+ sudo docker run -i -t alpine /bin/bash
+ sudo docker run <container_name>
+ All of the above
+
+
+What is used for converting a pool of Docker hosts into a single, virtual Docker host?
+
+ Docker Images
+ Docker Compose
+ Docker Hub
+ Docker Swarm
+
+
+What command is used for viewing all running containers?
+
+ docker ps
+ docker ps -a
+ docker rm
+ docker show
+
+What command is used to go inside a running container?
+
+ docker sh <container_id>
+ docker exec -it <container_id> sh
+ docker access <container_id>
+ docker ps -a
+
+
+What command is used to remove all stopped containers, unused networks, build caches, and dangling images?
+
+ docker system kill -all
+ docker kill -a
+ docker system prune
+ docker system rm -a
+
+
+Section 2: Django
+
+Which django admin command creates a new Django project.
+
+django-admin startproject mysite
+django-admin newproject mysite
+django-admin startproject -n mysite .
+django-admin startproject mysite
+
+
+What manage.py commands are used for propagating changes you make to your models (adding a field, deleting a model, etc.) into your database schema.
+
+python manage.py makechanges && python manage.py migrate
+python manage.py makeupdates && python manage.py updatedb
+python manage.py makemigrations && python manage.py migrate
+python manage.py makemigrations && python manage.py updateschema
+
+
+What part of django helps decoupled applications get notified when actions occur elsewhere in the framework. These allow certain senders to notify a set of receivers that some action has taken place. 
+
+Action Hooks
+Signals
+Telegraph
+Cross Site Scripting
+
+
+Django’s default behavior is to run in autocommit mode. Each query is immediately committed to the database, unless a ___________ is active.
+
+Transaction
+Interface
+Middleware
+Application Firewall
+
+
+Section 3: Javascript
+
+Please complete the following inside a JS compiler
+
+# Write a synchronous function ‘wait_1_second’ that returns a promise which resolves after a 1000ms delay. Write an asynchronous function that calls ‘wait_1_second’ and awaits the resolution of the returned promise.
+
+Section 4: Python
+
+Please complete the following problem inside a python compiler
+
+# Implement a function `get_cve_score` that requests
+# the cve details from the endpoint specified in the following pdf
+# https://csrc.nist.gov/CSRC/media/Projects/National-Vulnerability-Database/documents/web%20service%20documentation/Automation%20Support%20for%20CVE%20Retrieval.pdf
+# Examples
+##########
+# get_cve_score('CVE-2015-5611')
+# {'base_score': 8.3}
+#
+# get_cve_score('CVE-2020-0506')
+# {'base_score': 2.1}
+
+
