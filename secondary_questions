@@ -52,7 +52,7 @@ Which django admin command creates a new Django project.
 django-admin startproject mysite
 django-admin newproject mysite
 django-admin startproject -n mysite .
-django-admin startproject mysite
+django-admin createproject mysite
 
 
 What manage.py commands are used for propagating changes you make to your models (adding a field, deleting a model, etc.) into your database schema.
